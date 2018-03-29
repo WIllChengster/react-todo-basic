@@ -4,7 +4,7 @@ export default [
         details: 'pay attention to scott or something'
     },
     {
-        title: 'don\'t doe',
+        title: 'don\'t die',
         details: 'try not to fall off a cliff'
     },
     {
