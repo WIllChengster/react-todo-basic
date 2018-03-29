@@ -4,14 +4,23 @@ class AddForm extends Component{
     constructor(props){
         super(props)
         this.state={
-            newItem:'',
-            newDetails:''
+            title:'',
+            details:''
         }
     }
 
     handleAddItem(event){
         event.preventDefault();
         console.log('handlingggggggggggg', this.state)
+
+        const {newItem, newDetails} = this.state;
+
+        this.props.add({title: newItem, details: newDetails})
+
+        this.setState({
+            title:'',
+            details:''
+        })
     }
 
     render(){

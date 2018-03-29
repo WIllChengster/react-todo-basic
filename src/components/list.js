@@ -1,12 +1,11 @@
 import React from 'react';
-import listData from '../data/todo_items'
 
 
-export default ()=>{
+export default (props)=>{
 
-    const listElements = listData.map( (item, index) =>{
+    const listElements = props.list.map( (item, index) =>{
         return (
-            <li key={index} className="collection-item" >{item.title}</li>
+            <li key={index} className="collection-item" >{item.title}: {item.details}</li>
         )
     })
 
