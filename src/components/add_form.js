@@ -4,8 +4,8 @@ class AddForm extends Component{
     constructor(props){
         super(props)
         this.state={
-            title:'',
-            details:''
+            newItem:'',
+            newDetails:''
         }
     }
 
@@ -18,8 +18,8 @@ class AddForm extends Component{
         this.props.add({title: newItem, details: newDetails})
 
         this.setState({
-            title:'',
-            details:''
+            newTitle:'',
+            newDetails:''
         })
     }
 
