@@ -6,7 +6,7 @@ export default ()=>{
 
     const listElements = listData.map( (item, index) =>{
         return (
-            <li key="index" className="collection-item" >{item.title}</li>
+            <li key={index} className="collection-item" >{item.title}</li>
         )
     })
 
